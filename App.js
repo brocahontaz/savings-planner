@@ -17,7 +17,9 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+
 import {Provider as PaperProvider} from 'react-native-paper';
+import {theme} from './CustomProperties/Themes';
 
 import {
   Colors,
@@ -61,7 +63,7 @@ const App: () => Node = () => {
   };
 
   return (
-    <PaperProvider>
+    <PaperProvider theme={theme}>
       <SafeAreaView style={backgroundStyle}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
         <ScrollView
