@@ -1,6 +1,5 @@
 name: Build Android and iOS
 
-# Controls when the workflow will run
 on:
   push:
     branches: [ main ]
